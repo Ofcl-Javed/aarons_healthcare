@@ -16,6 +16,12 @@ exports.getLocationName = (req, res, next) => {
           path: '/locationName',
         });  
   };
+exports.getOrder = (req, res, next) => {
+        res.render('hospital/order', {
+          pageTitle: 'hospital',
+          path: '/order',
+        });  
+  };
 exports.postLocationName = (req, res, next) => {
 
       return res.redirect('/locationName')
@@ -42,7 +48,7 @@ exports.postDoctors = (req, res, next) => {
   exports.getDoctorsList = (req, res, next) => {
     res.render('hospital/doctorsList', {
       pageTitle: 'hospital',
-      path: '/login',
+      path: '/doctorsList',
     });  
 };
 
