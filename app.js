@@ -21,8 +21,7 @@ const errorController = require('./controllers/error');
 app.use(hospitalRoutes);
 
 app.use(errorController.get404);
-app.listen(port);
-
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 
 
